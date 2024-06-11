@@ -8,7 +8,7 @@ gcc -snake.c -o snake.o
 ```
 ./snake.o
 ```
-One of my very first big (sort of big) projects in C, tried copying the Snake game available on Nokia keypad phones back in the day.
+One of my very first big (sort of big) project in C, tried copying the Snake game available on Nokia keypad phones back in the day.
 
 ## Key Features
 • Implemented two game modes - Normal & the Box mode. 

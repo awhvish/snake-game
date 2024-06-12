@@ -6,6 +6,9 @@
 #include "includes/game_loop_box.h"
 #include "includes/terminal.h"
 #include "includes/welcome.h"
+/*if you're reading this and wondering what everyone else does - YES I wrote all of the above .h files and NO those weren't just copied and pasted*/
+
+
 
 enum Direction dir = STOP;
 
@@ -37,6 +40,7 @@ int main() {
 
     //Game initialises
     if (welcome()){
+        //game starts in normal  mode
         while (1) {
             draw(&head_x, &head_y, &fruit_x, &fruit_y, tail_x, tail_y, &tail_length, &score);
             input();
@@ -46,6 +50,7 @@ int main() {
     }
     else {
         while (1) {
+            //game starts in box mode 
             draw(&head_x, &head_y, &fruit_x, &fruit_y, tail_x, tail_y, &tail_length, &score);
             input();
             game_loop_box(&head_x, &head_y, &fruit_x, &fruit_y, tail_x, tail_y, &tail_length, &score);

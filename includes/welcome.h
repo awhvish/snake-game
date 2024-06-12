@@ -7,10 +7,10 @@
 #include "clear_screen.h"
 
 int welcome() {
-    printf("Welcome to Snake!\n"); usleep(1000000);
+    printf("Welcome to Snake!!\n"); usleep(1000000);
     printf("Use WASD keys to move the snake.\n"); usleep(1000000);
     printf("Eat the fruit to grow.\n"); usleep(1000000);;
-    printf("Press any n for normal mode and b for box mode.\n"); usleep(1000000);
+    printf("Press n for normal mode and b for box mode.\n"); usleep(1000000);
     char input; 
     scanf("%c", &input);
     clear_screen();
@@ -18,6 +18,7 @@ int welcome() {
     else if (input == 'b') return 0;
     else {
         printf("Invalid input. Normal mode selected by default.\n");
+        usleep(1000000);
         return 1;
     }
 }
